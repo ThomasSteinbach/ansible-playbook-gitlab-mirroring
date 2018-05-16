@@ -11,8 +11,11 @@
       repositories:
         - name: access-log-generator
         - name: AnsibleCD
+        - name: ansible-gitlab-mirroring
         - name: ansible-openshift-host-volume-provisioner
         - name: ansible-openshift-local-volume-provisioner
+        - name: ansible-playbook-gitlab-mirroring
+          visibility: private
         - name: ansible_playbooks
           visibility: private
         - name: ansible_roles
