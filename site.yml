@@ -1,0 +1,55 @@
+---
+
+- hosts: xarif.de
+  become: yes
+  roles:
+    - role: gitlab-mirroring
+      source_repository_path: /data/openshift-volumes/gitlab/gitlab-data/git-data/repositories/thomass
+      source_repository_base_url: https://gitlab.xarif.de/thomass
+      gitlabcom_user: thomassteinbach
+      githubcom_user: ThomasSteinbach
+      repositories:
+        - name: access-log-generator
+        - name: AnsibleCD
+        - name: ansible-openshift-host-volume-provisioner
+        - name: ansible-openshift-local-volume-provisioner
+        - name: ansible_playbooks
+          visibility: private
+        - name: ansible_roles
+          visibility: private
+        - name: bbc-micro-bit
+        - name: docker-ansible
+        - name: docker-ansiblecd-archlinux
+        - name: docker-ansiblecd-centos7
+        - name: docker-ansiblecd-ubuntu1804
+        - name: docker-apt-mirror
+        - name: docker-certbot
+        - name: docker-dwarf-fortress
+        - name: docker-dwarf-fortress-base
+        - name: docker-euserv-ddns
+        - name: docker-golang-gb
+        - name: docker-mysqldump
+        - name: docker-no-ip-ddns
+        - name: docker-pentaho6
+        - name: docker-pocketmine-mp
+        - name: docker-pound
+        - name: docker-sftp-server
+        - name: docker-ssh-client
+        - name: docker-unison
+        - name: git-commit-generator
+        - name: jenkins-build-generator
+        - name: letsencrypt-openshift
+        - name: oc2git
+        - name: openshift-gitlab
+        - name: openshift-mysql-template
+        - name: openshift-nextcloud
+        - name: openshift-presentation
+        - name: openshift-redmine
+        - name: openshift-singlenode-config
+        - name: openshift-sogo
+        - name: openshift-vault
+        - name: openshift-xwiki
+        - name: shellscript-library
+        - name: server
+          visibility: private
+        - name: svg_templates

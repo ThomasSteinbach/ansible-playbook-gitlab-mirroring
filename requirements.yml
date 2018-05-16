@@ -1,0 +1,2 @@
+- src: git+https://gitlab.xarif.de/thomass/ansible-gitlab-mirroring.git
+  name: gitlab-mirroring
