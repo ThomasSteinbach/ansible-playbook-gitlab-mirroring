@@ -3,7 +3,7 @@
 - hosts: xarif.de
   become: yes
   roles:
-    - role: ansible-gitlab-mirroring
+    - role: ansible-thomass-gitlab-mirroring
       source_repository_path: /data/openshift-volumes/gitlab/gitlab-data/git-data/repositories/thomass
       source_repository_base_url: https://gitlab.xarif.de/thomass
       gitlabcom_user: thomassteinbach
@@ -11,12 +11,13 @@
       repositories:
         - name: access-log-generator
         - name: AnsibleCD
-        - name: ansible-docker
-        - name: ansible-gitlab-mirroring
-        - name: ansible-openshift-host-volume-provisioner
-        - name: ansible-openshift-local-volume-provisioner
-        - name: ansible-pki
         - name: ansible-playbook-gitlab-mirroring
+        - name: ansible-thomass-common
+        - name: ansible-thomass-docker
+        - name: ansible-thomass-gitlab-mirroring
+        - name: ansible-thomass-openshift-host-volume-provisioner
+        - name: ansible-thomass-openshift-local-volume-provisioner
+        - name: ansible-thomass-pki
           visibility: private
         - name: ansible_playbooks
           visibility: private
