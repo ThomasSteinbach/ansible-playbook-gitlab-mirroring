@@ -1,1 +1,1 @@
-- src: git+https://gitlab.com/thomassteinbach/ansible-thomass-gitlab-mirroring.git
+- src: git+https://gitlab.xarif.de/ansible/gitlab-mirroring.git
